@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="lab6.css" rel="stylesheet" />
+    <title>Cat Facts</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Cat Facts</h1>
+
+      <div class="image-container">
+        <!-- Default cat image -->
+        <img id="catImage" src="/api/placeholder/400/300" alt="Cat Image" />
+      </div>
+
+      <button id="fetchButton" onclick="fetchCatFacts()">Get Cat Facts</button>
+
+      <table id="factsTable">
+        <thead>
+          <tr>
+            <th>factID</th>
+            <th>fact</th>
+          </tr>
+        </thead>
+        <tbody id="factsTable">
+          <!-- Table content will be populated by JavaScript -->
+        </tbody>
+      </table>
+    </div>
+  </body>
+  <script src="lab6.js"></script>
+</html>
